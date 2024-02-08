@@ -42,7 +42,7 @@ const sampleHeaders = {
 
 // usage of module
 (async () => {
-  const { response } = await soapRequest({ url: url, headers: sampleHeaders, xml: xml, timeout: 5000 }); // Optional timeout parameter(milliseconds)
+  const { response } = await soapRequest({ url: url, headers: sampleHeaders, xml: xml, timeout: 50000 }); // Optional timeout parameter(milliseconds)
   const { headers, body, statusCode } = response;
   //console.log(headers);
   console.log(body);
